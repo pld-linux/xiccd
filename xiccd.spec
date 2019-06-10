@@ -1,11 +1,11 @@
 Summary:	X color profile daemon
 Name:		xiccd
-Version:	0.2.4
+Version:	0.3.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://github.com/agalakhov/xiccd/archive/v%{version}.tar.gz
-# Source0-md5:	1f44dcd4eea6743039210f5b622c5117
+# Source0-md5:	87a22a231c807566a250c3065073e737
 URL:		https://github.com/agalakhov/xiccd
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.9
@@ -61,5 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/xiccd
-%{_desktopdir}/xiccd.desktop
+/etc/xdg/autostart/xiccd.desktop
 %{_mandir}/man8/xiccd.8*
